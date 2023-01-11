@@ -1,0 +1,90 @@
+body{
+    background-image: url(../imagenes/codigo.jpg);
+    background-size: contain;
+}
+#RectanguloSuperior{
+    padding: 30px;
+    background-color: rgb(24, 28, 48);
+    display: flex;
+    justify-content: right;
+    gap: 1cm;
+}
+#RectanguloSuperior button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(230, 221, 196);
+    box-shadow: 2px 2px rgb(103, 137, 131);
+}
+#TituloCentral{
+    display: flex;
+    justify-content: center;
+}
+#TituloCentral h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    color: rgb(238, 238, 238);
+    text-shadow: 3px 3px gray, 6px 6px black;
+}
+#Contenedores{
+    background-color: rgb(24, 28, 48);
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    row-gap: 100px;
+}
+#Contenedores h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(103, 137, 131);
+    text-shadow: 2px 3px black;
+}
+#RectanguloInferior{
+    background-color: rgb(103, 137, 131);
+    display: flex;
+}
+#RectanguloInferior p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24, 28, 48);
+}
+#RectanguloInferior img{
+    width: 65px;
+    height: 50px;
+}
+#TituloSecundario{
+    grid-row: 1;
+    grid-column: 2;
+}
+#ConHistoria{
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+    grid-row: 2;
+    grid-column: 1;
+}
+#ConHistoria img{
+    width: 350px;
+    height: 224px;
+}
+#ConJuegos{
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+    grid-row: 2;
+    grid-column: 3;
+}
+#ConJuegos img{
+    width: 350px;
+    height: 224px;
+}
+.FondoBoton{
+    background-color: rgb(230, 221, 196);
+    display: flex;
+    justify-content: center;
+}
+.FondoBoton button{
+    margin: 50px;
+    padding: 10px;
+    color: rgb(230, 221, 196);
+    background-color: rgb(24, 28, 48);
+}
