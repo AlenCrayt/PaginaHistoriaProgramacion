@@ -1,6 +1,7 @@
 body{
     background-image: url(../imagenes/codigo.jpg);
     background-size: contain;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #RectanguloSuperior{
     padding: 30px;
@@ -8,14 +9,23 @@ body{
     display: flex;
     justify-content: right;
     gap: 1cm;
+    margin: -20px;
 }
-#RectanguloSuperior button{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#RectanguloSuperior a{
     font-size: 20px;
-    padding: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    margin: 6px;
     background-color: rgb(230, 221, 196);
-    box-shadow: 2px 2px rgb(103, 137, 131);
+    box-shadow: 3px 3px rgb(103, 137, 131);
+    border-radius: 15px;
 }
+#RectanguloSuperior a:active{
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+
 #TituloCentral{/* justify content alinea alrededor del eje principal, align-items lo hace alrededor del eje secundario(vertical?) */
     display: flex;
     justify-content: center;
@@ -23,7 +33,6 @@ body{
     height: 12cm;
 }
 #TituloCentral h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
     color: rgb(238, 238, 238);
     text-shadow: 3px 3px gray, 6px 6px black;
@@ -34,9 +43,9 @@ body{
     grid-template-columns: 5;
     grid-template-rows: 2;
     row-gap: 100px;
+    padding-bottom: 180px;
 }
 #Contenedores h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     color: rgb(103, 137, 131);
     text-shadow: 2px 3px black;
@@ -44,9 +53,9 @@ body{
 #RectanguloInferior{
     background-color: rgb(103, 137, 131);
     display: flex;
+    padding: 50px;
 }
 #RectanguloInferior p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(24, 28, 48);
 }
 #RectanguloInferior img{
@@ -57,40 +66,140 @@ body{
     grid-row: 1;
     grid-column: 3;
 }
-#ConHistoria{
+#Recuadros{
     width: 350px;
     padding: 0px;
     margin: 0px;
+    border: solid 5px;
+    border-color: rgb(103, 137, 131);
+}
+#Recuadros img{
+    width: 350px;
+    height: 224px;
+}
+#Recuadros a{
+    text-decoration: none;
+    color: rgb(238, 221, 196);
+    box-shadow: 2px 2px rgb(103, 137, 131);
+    border-radius: 10px;
+}
+#Recuadros a:active{
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}
+.RHistoria{
     grid-row: 2;
     grid-column: 2;
-    border: solid 5px;
-    border-color: rgb(103, 137, 131);
 }
-#ConHistoria img{
-    width: 350px;
-    height: 224px;
-}
-#ConJuegos{
-    width: 350px;
-    padding: 0px;
-    margin: 0px;
+.RJuegos{
     grid-row: 2;
     grid-column: 4;
-    border: solid 5px;
-    border-color: rgb(103, 137, 131);
-}
-#ConJuegos img{
-    width: 350px;
-    height: 224px;
 }
 .FondoBoton{
     background-color: rgb(230, 221, 196);
     display: flex;
     justify-content: center;
 }
-.FondoBoton button{
+.FondoBoton a{
     margin: 50px;
     padding: 10px;
     color: rgb(230, 221, 196);
     background-color: rgb(24, 28, 48);
+}
+
+#TextosGrilla{
+    background-color: rgb(24, 28, 48);
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    row-gap: 100px;
+    padding-bottom: 180px;
+}
+
+#TextosGrilla h2{
+    font-size: 40px;
+    color: rgb(103, 137, 131);
+    text-shadow: 2px 3px black;
+}
+
+#TextosGrilla p{
+    color: rgb(230, 221, 196);
+}
+
+#Principio{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#ParrafoPrincipio{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#Ensamblaje{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#ParrafoEnsamblaje{
+    grid-column: 1;
+    grid-row: 2;
+}/*¿Es buena practica no especificar manualmente las posiciones de ciertos elementos en la grilla si ya estan posicionados automaticamente donde queres que esten? */
+
+#ReproductorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#RompeCabezas{
+    background-color: rgb(24, 28, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+#TituloRC{
+    color: rgb(103, 137, 131);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.Zonas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RompeImagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BotonReinicio{
+    padding: 10px 110px 10px 110px;
+    color: rgb(24, 28, 48);
+    background-color: rgb(230, 221, 196);
+    box-shadow: 3px 3px rgb(103, 137, 131);
+    border-radius: 10px;
+}
+
+.GrupoRC{
+    background-color: grey;
+    color: rgb(230, 221, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.GrupoRC:hover{
+    background-color: rgb(55, 55, 55)
+}
+
+.Los{
+    margin: 10px;
 }
